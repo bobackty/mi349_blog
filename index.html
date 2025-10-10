@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home</title>
+				<style>
+					:root {
+						--main-bg: #CEBACF;
+						--accent-bg: #7D80DA;
+						--card-bg: #B0A3D4;
+						--nav-bg: #65655E;
+						--footer-bg: #C6AFB1;
+						--text-main: #222;
+						--text-light: #fff;
+					}
+					body { font-family: Arial, sans-serif; background: var(--main-bg); color: var(--text-main); margin: 0; }
+					nav { background: var(--nav-bg); padding: 1em 0; margin-bottom: 2em; }
+					nav ul { list-style: none; display: flex; gap: 2em; justify-content: center; margin: 0; padding: 0; }
+					nav a { color: var(--text-light); text-decoration: none; font-weight: bold; }
+					main { max-width: 900px; margin: 0 auto; background: var(--card-bg); box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-radius: 8px; padding: 2em; }
+					h1, h2 { text-align: center; margin-top: 0; color: #000; }
+					.section { margin-bottom: 2em; }
+					.movie-table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+					.movie-table th, .movie-table td { border: 1px solid #65655E; padding: 0.75em 1em; text-align: left; }
+					.movie-table th { background: var(--accent-bg); color: var(--text-light); }
+					.movie-table tr:nth-child(even) { background: #CEBACF; }
+					.movie-table tr:nth-child(odd) { background: #B0A3D4; }
+					.monkey-img { display: block; margin: 2em auto; max-width: 350px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+					footer { margin-top: 2em; border-top: 1px solid #65655E; padding-top: 1em; background: var(--footer-bg); border-radius: 8px; max-width: 900px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.04); color: var(--nav-bg); }
+					.newsletter-form { display: flex; flex-direction: column; max-width: 350px; gap: 0.5em; margin: 0 auto; }
+					.newsletter-form input[type="email"] { padding: 0.5em; border-radius: 4px; border: 1px solid #65655E; }
+					.newsletter-form button { padding: 0.5em; border-radius: 4px; border: none; background: var(--accent-bg); color: var(--text-light); font-weight: bold; cursor: pointer; }
+					.kitty-corner {
+						position: fixed;
+						width: 60px;
+						height: 60px;
+						z-index: 1000;
+					}
+					.kitty-tl { top: 10px; left: 10px; }
+					.kitty-tr { top: 10px; right: 10px; }
+					.kitty-bl { bottom: 10px; left: 10px; }
+					.kitty-br { bottom: 10px; right: 10px; }
+				</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h1>Welcome to My Blog</h1>
+			<section class="section">
+				<h2>Forrest Gump is a 7/10 at best</h2>
+				<p style="font-size: 1.15em; line-height: 1.7;">
+					To start this off Tom Hank's acting in this movie was fenomenal and if it wasn't for him this movie would be a lot worse. The movie's plot is just kinda all over the place and it doesn't really have a main focus. It tries to cover too many topics and ends up not doing any of them justice. The movie also has some pretty big plot holes that are never explained. For example, how does Forrest become a millionaire? Another annyoing part of the movie is how Forrest is fawning over Jenny the whole time, to make it worse she rejects him everytime time and only AFTER he got his money up did she reciprocate any love to him. This is more of a personal nitpick but why does no one know who he is? He was a war hero, met multiple US presidents, ran across the whole country, and represented the US in their ping pong match againsts China. The movie never really explains this and it just kind of happens. Overall, Forrest Gump is an okay movie but it's not as good as people make it out to be.
+				</p>
+				<p style="text-align: right; color: #666; font-size: 0.95em;">Date: June 10, 2024<br>By me, Tyler</p>
+			</section>
+			<section class="section">
+				<h2>The Best Movie of All Time</h2>
+				<h3 style="margin-bottom: 0.5em;">Evil Dead 3: Army of Darkness</h3>
+				<p style="font-size: 1.08em; line-height: 1.6;">
+					Evil Dead 3 Army of Darkness is the best movie of all time because it combines horror, comedy, and action in a way that is both entertaining and unique. The film follows Ash, a morally grey hero who is transported back in time to the Middle Ages, where he must battle an army of undead creatures in order to return to his own time. The film is filled with memorable one-liners, over-the-top action sequences, and a sense of fun that is rarely seen in horror movies. Overall, Evil Dead 3 Army of Darkness is a cult classic that has stood the test of time and continues to be beloved by fans around the world. It's a must-watch for anyone who loves movies. While it may not be a masterpiece in terms of filmmaking, its entertainment value and unique blend of genres make it the best movie of all time in my opinion. Its departure from straight horror that the first two movies had is what makes it stand out and be so memorable. Bruce Campbell has appeared in almost every movie director Sam Raimi has made, in his part in the first Spider-Man movie as the wrestling announcer he was actually the person who gave Peter Parker the iconic name of Spider-Man!
+				</p>
+			</section>
+			<section class="section">
+				<h2>My Top Movies of All Time</h2>
+				<table class="movie-table">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Genre</th>
+							<th>Year</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Evil Dead 3: Army of Darkness</td>
+							<td>Horror/Comedy</td>
+							<td>1992</td>
+						</tr>
+						<tr>
+							<td>The Thing</td>
+							<td>Horror/Sci-Fi</td>
+							<td>1982</td>
+						</tr>
+						<tr>
+							<td>Howl's Moving Castle</td>
+							<td>Animation/Fantasy</td>
+							<td>2004</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<img class="monkey-img" src="https://preview.redd.it/the-original-image-of-the-monkey-thinking-meme-v0-ea1hkdjnx9af1.jpeg?width=1080&crop=smart&auto=webp&s=5fb2b05369bfbffd94d6009a679a9a5fe5e4223f" alt="Pondering Monkey"style="width:180px;height:auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+			<img class="kitty" src="https://media1.tenor.com/m/sbfBfp3FeY8AAAAC/oia-uia.gif" alt="kitty dancing"style="width:180px;height:auto;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+		</main>
+			<footer>
+				<h2 style="text-align: center;">Sign up for our Email Newsletter</h2>
+				<form action="#" method="post" class="newsletter-form">
+					<label for="email">Email address:</label>
+					<input type="email" id="email" name="email" required placeholder="you@example.com">
+					<button type="submit">Subscribe</button>
+				</form>
+			</footer>
+
+		</body>
+	</html>
