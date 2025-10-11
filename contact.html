@@ -8,40 +8,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact</title>
 	</head>
-	<body style="font-family: Arial, sans-serif; background: #CEBACF; color: #222; margin: 0;">
-		<nav style="background: #65655E; padding: 1em 0; margin-bottom: 2em;">
-			<ul style="list-style: none; display: flex; gap: 2em; justify-content: center; margin: 0; padding: 0;">
-				<li><a href="index.html" style="color: #fff; text-decoration: none; font-weight: bold;">Home</a></li>
-				<li><a href="about.html" style="color: #fff; text-decoration: none; font-weight: bold;">About</a></li>
-				<li><a href="contact.html" style="color: #fff; text-decoration: none; font-weight: bold;">Contact</a></li>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-		<main style="max-width: 500px; margin: 0 auto; background: #B0A3D4; box-shadow: 0 2px 8px #B0A3D4; border-radius: 8px; padding: 2em;">
-			<h1 style="text-align: center; margin-top: 0; color: #000;">Contact Me</h1>
-			<form name="contact" style="display: flex; flex-direction: column; gap: 1em;" autocomplete="off"data-netlify="true">>
-						<div>
-							<label for="name" style="display: block; margin-bottom: 0.3em; color: #65655E;">Name:</label>
-							<input type="text" id="name" name="name" required style="width: 100%; padding: 0.5em; border-radius: 4px; border: 1px solid #65655E; background: #CEBACF; color: #222;">
-						</div>
-						<div>
-							<label for="email" style="display: block; margin-bottom: 0.3em; color: #65655E;">Email address:</label>
-							<input type="email" id="email" name="email" required style="width: 100%; padding: 0.5em; border-radius: 4px; border: 1px solid #65655E; background: #CEBACF; color: #222;">
-						</div>
-						<div>
-							<label for="reason" style="display: block; margin-bottom: 0.3em; color: #65655E;">Reason for contact:</label>
-							<select id="reason" name="reason" required style="width: 100%; padding: 0.5em; border-radius: 4px; border: 1px solid #65655E; background: #CEBACF; color: #222;">
-								<option value="">-- Please choose an option --</option>
-								<option value="hi">Saying hi</option>
-								<option value="contractor">Looking for a contractor</option>
-								<option value="interview">Interested in an interview</option>
-							</select>
-						</div>
-						<div>
-							<label for="comment" style="display: block; margin-bottom: 0.3em; color: #65655E;">Comment:</label>
-							<textarea id="comment" name="comment" rows="5" style="width: 100%; padding: 0.5em; border-radius: 4px; border: 1px solid #65655E; background: #CEBACF; color: #222;"></textarea>
-						</div>
-						<button type="submit" style="padding: 0.7em; border-radius: 4px; border: none; background: #7D80DA; color: #fff; font-weight: bold; cursor: pointer;">Submit</button>
-					</form>
+		<main>
+			<h1>Contact Me</h1>
+			<form autocomplete="off">
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div>
+						<label for="email">Email address:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div>
+						<label for="reason">Reason for contact:</label>
+						<select id="reason" name="reason" required>
+							<option value="">-- Please choose an option --</option>
+							<option value="hi">Saying hi</option>
+							<option value="contractor">Looking for a contractor</option>
+							<option value="interview">Interested in an interview</option>
+						</select>
+					</div>
+					<div>
+						<label for="comment">Comment:</label>
+						<textarea id="comment" name="comment" rows="5"></textarea>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
 		</main>
 	</body>
 </html>
