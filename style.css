@@ -138,3 +138,47 @@ input[type="text"], input[type="email"], textarea {
 #contact-form div{
     margin: 10px 0;
 }
+@media (max-width: 600px) {
+    #band_posters {
+        flex-direction: column;
+    }
+    #band_posters img {
+        width: 80%;
+        height: auto;
+    }
+    #contact-form {
+        width: 90%;
+    }
+    header, .sticky {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header h1 {
+        padding: 20px;
+    }
+    p {
+        font-size: 14px;
+        margin: 10px;
+        padding: 15px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    #band_posters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #band_posters img {
+        width: 150px;
+        height: 200px;
+        margin: 10px;
+    }
+    #contact-form {
+        width: 80%;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    
+
+}
